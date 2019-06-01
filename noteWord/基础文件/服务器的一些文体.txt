@@ -1,0 +1,9 @@
+1：mysql设置密码 
+	mysqladmin -u root possword 123456
+2：解压.tar.xz 的文件 
+	使用xz -d filename 先解压成.tar的文件，在使用tar -xvf filename 解压.tar的文件
+3：mysql 如何修改密码
+	进入mysql库修改user表
+	mysql>use mysql;
+	mysql>update user set password=password('你的密码') where user='root'; 
+	mysql>flush privileges;

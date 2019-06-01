@@ -1,0 +1,49 @@
+1 抽象类
+	抽象类是为了实现继承存在的
+	在语法方面
+	1.由abstract 修饰
+	2.抽象类中的方法叫做抽象方法 ，也由abstract修饰
+	3.抽象类中可以没有抽象方法 
+
+2 继承 
+接口 
+内部类 
+外部类
+
+
+idea中jdbc的连接
+1 加载驱动 class.forName("com.mysql.jdbc.Drive");//放在trycatch里面catch里面
+2 connection conn =DriveManager.getCOnnection(URL,USERNAME,PASSWORD);//用来获取一个数据库的连接对象conn
+3 操作conn
+4 Statement stmt=conn.createStatement();
+Statement接口用于创建向数据库中传递SQL语句的对象，该接口提供了一些方法可以实现对数据库的常用操作
+
+
+
+Connection con;//
+con = DriverManager.getConnection(url, user, password);
+Statement statement = con.createStatement();//创建statement的对象
+String sql = "select * from tbl_book_student;";//我的数据表是》》
+ResultSet resultSet = statement.executeQuery(sql);
+
+
+useBean
+
+<%= %>
+<% %>
+<%! %>
+
+JAVA反射机制
+JAVA反射机制是在运行状态中，对于任意一个类，都能够知道这个类的所有属性和方法；
+对于任意一个对象，都能够调用它的任意一个方法；
+这种动态获取的信息以及动态调用对象的方法的功能称为java语言的反射机制。
+
+
+
+
+
+
+
+
+
+

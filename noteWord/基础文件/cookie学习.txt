@@ -1,0 +1,70 @@
+exert关键词的作用是将 一个方全局变量使用在多个函当中
+简单来说就是 公用 函数和 变量
+
+重新保存
+cookie
+
+login.jsp---dologin,jsp---users,jsp
+
+首先判断是否选择了记住登录状态
+String[] isUseCookies=request.getParrame
+if(){
+//生成两个cookie  对象 保存在其中 
+cookie usernamecookie=new cookie("username",username);
+cookie passwordcookie
+
+usernamecookie.setmaxage();//设置最大的生存时间 单位是秒 
+response.addcookie(usernamecookie);//使用addcookie方法 保存 
+response.addcookie(usernamecookie);
+}
+elsr{
+cookie[] ciikies=request.getcookies();
+if(cookies!=null&&cookies.kength>0){
+for(cookie c:ciikies){
+if(c.getname().equal("username)&&){
+
+c.setmaxage(0);//设置cookie失效
+response.addcookie(c);//重新保存
+}
+}
+
+getParameterValues和getParameter的区别
+
+request.getParameterValues(String name)是获得如checkbox类（名字相同，但值有多个）的数据。 接收数组变量，如checkobx类型
+request.getParameter（String name）是获得相应名的数据，如果有重复的名，则返回第一个的值. 接收一般变量，如text类型
+例子：
+<input type="text" name="test" value="1" />
+<input type="text" name="test" value="2" />
+<input type="text" name="test" value="3" />
+request.getParameterValues("test") ----------------- [1, 2, 3]
+request.getParameter("test") ------------------ 1
+
+
+//编码
+java.net包中  使用编码和解码的工具类
+URLEncode.encode(有两个参数 第一个是对什么字符串编码 ，第二个是编码方式 
+//编码
+URLDecoder.decode("解码的字符串","解码方式");
+
+
+
+
+session和 cookie的区别和共同点
+
+
+都是用来保存用户的信息
+都要过期
+session  在服务器上  重要俺去行高
+cookies 字符串保存在客户端  安全性不高的
+
+
+
+
+
+
+
+
+
+
+
+

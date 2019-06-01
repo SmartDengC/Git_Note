@@ -1,0 +1,91 @@
+MySQL的操作
+
+时间 7 24
+
+insert语句
+insert into 表名 列名values（）；
+INSERT INTO TBL_NAME SET COL_NAME=""; //智能鞋图一条语句
+insert into tbl_name /col_name select ...
+
+UPDATE 单标更新
+UPDATE TBL__NAME SET COL_NAME="",COL_NAME2="";//记录都要被改变
+
+delete 单表删除
+DELETE FROM TBL_NAEM WHERE;
+
+AS 可以用来更名 SELECT ID AS USERID FROM USERS;
+
+WHERE 条件 过滤
+
+查询的结构进行分组 GROUP BY COL_NAME[ASC/DESC]
+SELECT STUDENT_SEX FROM  TBL_BOOK_STUDENT GROUP BY STUDENT_SEX;
+
+HAVING  聚合函数  ?
+
+ORDER BY ID DESC;//排序的方式
+
+limit 限制返回的数目结构
+select*from tbl_name limit 开始的下标志，限制数目;
+ 
+ INSERT INTO +表名 +从本数据库中显示的数据
+ 
+ 
+ 时间 7 25
+ 
+ 子查询 和连接  多表的查询和更新
+ 
+ SET NAMES gbk;   //设置编码方式
+ 
+ 子查询 必须用小括号里面 外层查询不限制
+ 
+ SELECT *FROM  T1 WHERE COL_NAME=(SELECT *FROM T2);//子查询中间没有分号
+ 
+ 使用比较运算符的子查询  
+ 
+ 聚合函数只有一个返回值 avg sum 
+ SELECT AVG(GOODS_PRICE ) FROM TDB_GOODS;
+ SELECT ROUND(AVG(GOODS_PRICE),2) FROM TDB_GOODS;
+ SELECT GOODS_ID ,GOODS_NAME,GOODS_PRICE FROM  TDB_GOODS
+ 
+ 在子查询有多个返回值的时候使用  
+ any 大于最小的  小于最打的  等于任意值
+ some  大于最小的 小于最大的 等于任意值
+ all  大于最大的  小于最小的
+ 
+ =any  于in相同
+ !=all(<>all) 于not in等效
+ 
+ 
+ 删除主键  ALTER TABLE 表名 DROP 字段 primery key；
+ ALTER TABLE tt CHANGE COLUMN id id int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY;
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

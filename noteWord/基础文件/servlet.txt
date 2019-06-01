@@ -1,0 +1,39 @@
+servlet学习
+tomcat container engine host servlet context wrapper 
+
+java类继承httpservlet
+重写doGet() 或者 doPost();
+在.xml中注册
+<servlet >  servlet-name   servlet-class
+<servlet_mapping >servlet-name（与servlet-naem中的相同） url-patter (与界面中写的超链接地址相同)
+
+
+servlet继承了 servlet.HttpServlet 这个类
+
+生命周期
+
+
+1：servlet 是什么
+
+2：jsp是什么
+
+3：Javabean是什么
+   是一端特殊的Java类，就是只有get set，有默认的构造方法的Java类
+   
+4：服务器是什么？ 
+   简单来讲就是 把数据放在一个地方 人们可以去访问
+   
+路径跳转
+jsp->servlet
+相对路径 herf="servlet/Servlet"
+绝对路径 herf="<%=PATH%>/servlet/Servlet"
+
+在xml文档中以/开头
+
+servlet->jsp
+请求重定向 response.sentRedirect(requset.getContextPath()+"/text.jsp");
+服务器内部跳转 requset.getRequestDispatcher("/text.jsp").forword(requset,response);
+               request.getRequestDispatcher("../userinfo.jsp").forward(request,response);
+			   
+			   获取初始化参数
+			   init-param  param-name ,param-value

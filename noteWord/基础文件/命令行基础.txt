@@ -1,0 +1,86 @@
+1：查看端口命令 netstat -a -n
+2：打开服务 services.msc 
+3：注册表 regedit
+4：color a/？
+5：释放ip ipconfig /release
+6：重新获取ip ipconfig /renew
+net view 查看局域网中的链接的电脑名称
+systeminfo 查看电脑的配置
+copy con +地址：创建文件
+type +文件 ：打开文件
+start+ 文件 ：打开文件
+
+渗透攻击
+攻击载荷  攻击的代码 木马
+shellcode 返回值
+模块
+监听器
+help  
+info 
+jobs 显示模块 
+back
+banner
+kill 杀死
+quit 退出
+route 跳板 隐藏 ip
+search 搜索
+sessions 选择回话
+set 设置选项
+
+
+kali 2.0 已经没有metasploit 这个服务了，所以service metasploit start 的方式不起作用。
+在kali 2.0中启动带数据库支持的MSF方式如下：
+#1  首先启动postgresql数据库：/etc/init.d/postgresql start；或者 service postgresql start；
+#2  初始化MSF数据库（关键步骤！）：msfdb init；
+#3  运行msfconsole：msfconsole；
+#4  在msf中查看数据库连接状态：db_status。
+DONE
+
+split 分割
+in 判断是否在其中
+strip 去掉空格
+upper 大写
+lower 小写
+
+
+[] 列表
+pop 删除
+append 追加
+index 查看索引
+
+
+()元组  只能调用不能修改
+
+
+{} 字典 不能有两个一样的键
+keys 查看有哪些键
+has_key 查看是否有这个键
+
+
+python虚拟
+
+pip install -i 网址()
+pip install -i https://pypi.douban.com/simple/ djang
+virtualenv scrapytest 创建scrapytest 的虚拟路径
+cd scrapytest 进入该路径
+cd Scripts
+activate.bat 进入
+deactivate.bat  退出
+python
+
+新建虚拟环境
+virtualenv -p + python 的安装地址 + 新建的虚拟目录
+
+进入即可 运行activate.bat 使用不同的python版本
+
+
+
+
+
+
+
+
+
+
+
+

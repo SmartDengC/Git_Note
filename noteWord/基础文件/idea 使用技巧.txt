@@ -1,0 +1,5 @@
+idea 使用技巧
+ 1 重写父类方法   Ctrl+O
+ 2 分屏  ~+f
+ 3 jump Ctrl + ;
+ 4 java class  `+alt `
