@@ -33,3 +33,33 @@ public class NewUserCOntroller(){
 }
 
 ```
+```html
+iframe 
+```
+
+## jquery $("#iframe")
+
+## sql 的模糊匹配
+## ajax 请求
+```ajax
+$.ajax({
+    type:"post",
+    url:"kinds/addKind",
+    data:$("#form").serialize(),
+    dataType:'json',
+    async:true,
+    success:function(data){
+        if(data.msg == "success"){
+            func();
+            ......
+        }
+        else{
+            ......
+        }
+    }
+})
+```
+
+## foreach 
+varStatus = "stat"
+## @ResponseBody
