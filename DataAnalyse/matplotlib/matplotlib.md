@@ -8,9 +8,13 @@
 
 ## 什么是探索性数据分析 (EDA)
 - EDA 常用工具--基于图形的量化技术
-    - 散点图 scatter
+    - 散点图 scatter  
+matplotlib.pyplot.scatter(x, y, s, c, marker...)  
+![](./scatterParam.jpg)
     - 直方图 hist
-    - 柱状图 bar
+matplotlab.pyplot.hist(x, bins)
+    - 柱状图 bar  
+matplotlib.pyplot.bar(left, height, alpha, width, color, edgecolor,label)
     - 线形图
     - 盒装图
     - 矩阵绘图 plt.imshow()
