@@ -19,6 +19,8 @@
 - 6.python 启动简单的http服务命令？
     - py2:python -m SimpleHTTPServer 
     - py3:python -m http.server
+- 7.pandas 读取数据时添加列名？
+    - names 参数
 # Docker
 - 1.启动docker服务
     - service docker start
@@ -48,6 +50,10 @@
     - 1[](./Pictrues/gitRemoveOrigin.png)
 - 4.git 放弃没有add到暂存区的修改？
     - git checkout . (. 表示所有的文件，你可以放弃指定的文件)
+- 5.git 查看配置了的信息
+    - git config --global --list  // 查看当前用户配置
+    - git config --system --list  // 查看系统config
+    - git config --local --list  // 查看当前仓库配置信息
 
 # Idea 
 - 1.步骤
