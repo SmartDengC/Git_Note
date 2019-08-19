@@ -22,7 +22,7 @@ Install:
 
 Instroduce:
 在安装node.js的时候，也安装了npm，他可以用来安装hexo框架。但是由于缓存问题，下载速度较慢，也可以使用cnpm，使用npm安装cnpm`npm install -g cnpm --registe`
-`npm install -g hexo-cli`  
+`cnpm install -g hexo-cli`  
 
 - Git   
 略
